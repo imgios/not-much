@@ -6,6 +6,7 @@ description: "This is an example post for not-much theme."
 keywords: ["gohugo", "hugo", "go", "blog"]
 draft: false
 tags: ["hugo"]
+summary: This is an example post with a very short content and a single header.
 ---
 
 ## The standard Lorem Ipsum passage

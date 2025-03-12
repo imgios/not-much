@@ -4,7 +4,7 @@
       {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
     </div>
     <div class="post">
-      <header class="mb-5">
+      <header class="mb-4">
         <h1 class="text-uppercase">{{ .Title }}</h1>
         {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
         {{ $dateHuman := .Date | time.Format ":date_long" }}

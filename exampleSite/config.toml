@@ -21,6 +21,7 @@ copyright = "Sample custom notice © {year}"
 theme = "dark"
 palette = "catpuccin"
 showThemeNotice = true
+showPostsSummary = true
 
 # Navigation
 [menu]

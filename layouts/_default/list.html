@@ -10,9 +10,13 @@
     <div class="row mb-3">
       {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
       {{ $dateHuman := .Date | time.Format ":date_long" }}
-      <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+      <time class="small" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
       <h2 class="h5"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      <!-- {{ .Summary }} -->
+      {{ if .Site.Params.showPostsSummary }}
+      <p class="small opacity-75 post-summary">
+        {{ .Summary }}
+      </p>
+      {{ end }}
     </div>
     {{ end }}
     {{ $paginator := .Paginator }}
