@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
 body {
   background-color: var(--bg-color) !important;
@@ -11,10 +10,10 @@ body {
 
 body, main {
   height: 100%;
-  font-family: 'Literata', serif !important;
+  font-family: 'Ubuntu Sans', serif !important;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: .95em;
+  font-size: medium;
   font-weight: normal;
 }
 
@@ -82,7 +81,7 @@ ul > li:has(input[type=checkbox]) {
 }
 
 code {
-  font-family: 'Red Hat Mono', serif !important;
+  font-family: 'Ubuntu Sans Mono', serif !important;
 }
 
 code:not(.highlight *) {
@@ -105,7 +104,7 @@ mark {
 
 kbd {
   background-color: var(--bg-variant) !important;
-  font-family: 'Red Hat Mono', monospace !important;
+  font-family: 'Ubuntu Sans Mono', monospace !important;
   font-weight: bold;
 }
 
