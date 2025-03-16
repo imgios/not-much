@@ -15,6 +15,7 @@ body, main {
   font-style: normal;
   font-size: medium;
   font-weight: normal;
+  color: var(--font-color) !important;
 }
 
 ::selection {
@@ -167,6 +168,10 @@ kbd {
 	text-decoration: none !important;
 }
 
+img {
+  max-width: 100%;
+}
+
 figure {
   box-sizing: border-box;
   display: inline-block;
@@ -252,4 +257,40 @@ ul:has(input[type=checkbox]) {
 
 li > input[type=checkbox] {
   margin-right: 0.2rem;
+}
+
+.toc-title {
+  font-size: smaller;
+}
+
+.toc {
+  font-family: 'Red Hat Mono', serif !important;
+  margin-right: 1.5rem;
+  opacity: 0.2;
+  /* Opacity Transition */
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  /* Margin Transition */
+  -webkit-transition: margin 1s ease-in-out;
+  -moz-transition: margin 1s ease-in-out;
+  -ms-transition: margin 1s ease-in-out;
+  -o-transition: margin 1s ease-in-out;
+  transition: margin 1s ease-in-out;
+
+  &:hover {
+    margin-right: 2.3rem;
+    opacity: 1;
+  }
+}
+
+#TableOfContents > ul {
+  list-style-type: '//  ';
+}
+
+.badge {
+  font-family: 'Red Hat Mono', serif !important;
+  font-weight: 600 !important;
 }
