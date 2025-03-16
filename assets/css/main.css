@@ -266,7 +266,7 @@ li > input[type=checkbox] {
 .toc {
   font-family: 'Ubuntu Sans Mono', serif !important;
   margin-right: 1.5rem;
-  opacity: 0.2;
+  opacity: 0.6;
   /* Opacity Transition */
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
