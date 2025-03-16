@@ -168,10 +168,6 @@ kbd {
 	text-decoration: none !important;
 }
 
-img {
-  max-width: 100%;
-}
-
 figure {
   box-sizing: border-box;
   display: inline-block;
