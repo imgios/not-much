@@ -264,7 +264,7 @@ li > input[type=checkbox] {
 }
 
 .toc {
-  font-family: 'Red Hat Mono', serif !important;
+  font-family: 'Ubuntu Sans Mono', serif !important;
   margin-right: 1.5rem;
   opacity: 0.2;
   /* Opacity Transition */
@@ -291,6 +291,6 @@ li > input[type=checkbox] {
 }
 
 .badge {
-  font-family: 'Red Hat Mono', serif !important;
+  font-family: 'Ubuntu Sans Mono', serif !important;
   font-weight: 600 !important;
 }
