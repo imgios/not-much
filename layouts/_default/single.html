@@ -16,6 +16,8 @@
         <h1 class="text-uppercase">{{ .Title }}</h1>
         {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
         {{ $dateHuman := .Date | time.Format ":date_long" }}
+        {{ $lastModified := .Lastmod | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{ $lastmodHuman := .Lastmod | time.Format ":date_long" }}
         <div aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item small">
@@ -24,7 +26,13 @@
             <li class="breadcrumb-item small">
               {{ printf "%d minutes" .ReadingTime }}
             </li>
+            {{ if and (isset .Params "lastmod") (ne $lastModified $dateMachine) }}
+            <li class="breadcrumb-item small">
+              Last modified: <time datetime="{{ $lastModified }}">{{ $lastmodHuman }}</time>
+            </li>
+          {{ end }}
           </ol>
+
         </div>
       </header>
       <article>
