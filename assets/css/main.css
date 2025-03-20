@@ -4,10 +4,6 @@ body {
   background-color: var(--bg-color) !important;
 }
 
-* {
-  clear: left;
-}
-
 body, main {
   height: 100%;
   font-family: 'Ubuntu Sans', serif !important;
@@ -165,7 +161,6 @@ kbd {
 	background-position: bottom left;
 	background-repeat: no-repeat;
 	background-size: 100% 2px;
-	text-decoration: none !important;
 }
 
 figure {
