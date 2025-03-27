@@ -284,3 +284,17 @@ li > input[type=checkbox] {
   font-family: 'Red Hat Mono', serif !important;
   font-weight: 600 !important;
 }
+
+hr {
+  border: 0 !important;
+  text-align: center;
+  letter-spacing: 0.2rem;
+
+  &::before {
+    content: '/////';
+  }
+
+  &::after {
+    content: attr(data-content) '/////';
+  }
+}
