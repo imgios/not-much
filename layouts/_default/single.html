@@ -21,6 +21,13 @@
             <li class="breadcrumb-item small">
               <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
             </li>
+            {{ $lastModMachine := .Lastmod | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{ if and (isset .Params "lastmod") (ne $lastModMachine $dateMachine) }}
+            {{ $lastModHuman := .Lastmod | time.Format ":date_long" }}
+            <li class="breadcrumb-item small">
+              Updated: <time datetime="{{ $lastModMachine }}">{{ $lastModHuman }}</time>
+            </li>
+            {{ end }}
             <li class="breadcrumb-item small">
               {{ printf "%d minutes" .ReadingTime }}
             </li>
