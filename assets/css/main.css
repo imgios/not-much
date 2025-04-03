@@ -147,6 +147,11 @@ kbd {
   color: var(--secondary);
 }
 
+.post .draft-label {
+  font-weight: bold;
+  color: var(--primary);
+}
+
 .breadcrumb-item+.breadcrumb-item::before {
   color: #6c757d !important;
 }
