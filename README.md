@@ -177,6 +177,21 @@ showPostsSummary = true
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+#### Table of Contents
+
+You can display the Table of Contents in the post by configuring the `toc` parameter in the header:
+
+```markdown
+---
+...
+toc: true
+---
+```
+
+The Table of Contents is not displayed by default.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Built With
 
 * [Hugo](https://gohugo.io/) - The static site generator framework
