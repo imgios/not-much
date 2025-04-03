@@ -287,14 +287,15 @@ li > input[type=checkbox] {
 
 hr {
   border: 0 !important;
-  text-align: center;
-  letter-spacing: 0.2rem;
-
-  &::before {
-    content: '/////';
-  }
-
-  &::after {
-    content: attr(data-content) '/////';
-  }
+  height: 10px;
+  color: var(--secondary) !important;
+  background-image: linear-gradient(-45deg,
+    transparent,
+    transparent 25%,
+    currentColor 25%,
+    currentColor 50%,
+    transparent 50%,
+    transparent 75%,
+    currentColor 75%);
+  background-size: 4px 4px;
 }
