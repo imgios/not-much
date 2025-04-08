@@ -80,6 +80,7 @@ A reference can be found in [`exampleSite/config.toml`](https://github.com/imgio
 
 You can update the homepage by creating the index in `your-hugo-wesbite/content/_index.md` with the following structure:
 
+<kbd>/content/_index.md</kbd>
 ```yaml
 ---
 lead: "Basic, simple and minimal Hugo theme"
@@ -96,6 +97,7 @@ Using the page content for the description gives you the flexibility to extend t
 
 The main menu can be customised as you prefer to add site-related locations (e.g., your blog location) or your social links:
 
+<kbd>config.toml</kbd>
 ```toml
 # Controls the navigation
 [[menu.main]]
@@ -130,6 +132,7 @@ Available Color Palettes:
 
 Use the `theme` site param to specify the theme style and `palette` site param to specify the palette name to use. If those param are not specified, the theme will load the default automatically.
 
+<kbd>config.toml</kbd>
 ```toml
 [params]
 theme = "dark"
@@ -149,12 +152,14 @@ New palettes can be stored under `assets/css/palette`.
 
 Write your custom copyright notice in the footer by updating the `copyright` field:
 
+<kbd>config.toml</kbd>
 ```toml
 copyright = "© {year}"
 ```
 
 The theme notice `// powered by hugo and imgios/not-much` can be enabled (or disabled) by setting the `showThemeNotice` boolean parameter:
 
+<kbd>config.toml</kbd>
 ```toml
 showThemeNotice = true # or false
 ```
@@ -171,6 +176,7 @@ You can enable the math rendering by adding `math: true` in the page metadata.
 
 You can enable the posts summary rendering in the Posts list by configuring the `showPostsSummary` parameter:
 
+<kbd>config.toml</kbd>
 ```toml
 showPostsSummary = true
 ```
@@ -181,6 +187,7 @@ showPostsSummary = true
 
 You can display the Table of Contents in the post by configuring the `toc` parameter in the header:
 
+<kbd>/content/posts/example-post.yaml</kbd>
 ```markdown
 ---
 ...
