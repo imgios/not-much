@@ -129,6 +129,7 @@ Available Color Palettes:
 - Default
 - Catpuccin
 - Dracula
+- E-Ink
 
 Use the `theme` site param to specify the theme style and `palette` site param to specify the palette name to use. If those param are not specified, the theme will load the default automatically.
 
@@ -142,7 +143,7 @@ palette = "default"
 | Param | Allowed values |
 |-------|----------------|
 | theme | `light, dark, auto` |
-| palette | `catpuccin,dracula,default,custom-palette-name` <br/><sub> where `custom-palette-name` is available as `assets/css/palette/custom-palette-name.css` </sub> |
+| palette | `catpuccin,dracula,default,eink,custom-palette-name` <br/><sub> where `custom-palette-name` is available as `assets/css/palette/custom-palette-name.css` </sub> |
 
 New palettes can be stored under `assets/css/palette`.
 
