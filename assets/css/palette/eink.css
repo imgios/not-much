@@ -1,0 +1,17 @@
+:root {
+    --bg-color: #eeeeee;
+    --bg-variant: #dbdcdf;
+    --primary: #141414;
+    --primary-variant: #141414;
+    --secondary: #141414;
+    --font-color: #303030;
+}
+
+.dark {
+    --bg-color: #141414;
+    --bg-variant: #141414;
+    --primary: #eeeeee;
+    --primary-variant: #dbdcdf;
+    --secondary: #eeeeee;
+    --font-color: #b6b6b6;
+}
