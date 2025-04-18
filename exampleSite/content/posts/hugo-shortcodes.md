@@ -23,6 +23,20 @@ This is a **bold** word.
 {{ end }}
 {{< /highlight >}}
 
+With emphasize lines:
+
+```go {linenos=inline hl_lines=[3,"6-8"] style=emacs}
+package main
+
+import "fmt"
+
+func main() {
+    for i := 0; i < 3; i++ {
+        fmt.Println("Value of i:", i)
+    }
+}
+```
+
 ## Images
 
 {{< figure src="https://images.unsplash.com/photo-1560032779-0a8809186efd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" title="Dave Herring" >}}
