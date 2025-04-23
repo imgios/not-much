@@ -80,7 +80,7 @@ palette = "default"
 | Param | Allowed values |
 |-------|----------------|
 | theme | `light, dark, auto` |
-| palette | `catpuccin,dracula,default,eink,solarized,custom-palette-name` <br/><sub> where `custom-palette-name` is available as `assets/css/palette/custom-palette-name.css` </sub> |
+| palette | <ul><li>catpuccin</li><li>dracula</li><li>default</li><li>eink</li><li>solarized</li><li>custom-palette-name<br/><sub>where `custom-palette-name` is available as `assets/css/palette/custom-palette-name.css`</sub></li> |
 
 New palettes can be stored under `assets/css/palette`.
 
