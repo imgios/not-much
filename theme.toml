@@ -1,7 +1,7 @@
 name = 'not-much'
 license = 'MIT'
 licenselink = 'https://github.com/imgios/not-much/blob/main/LICENSE'
-description = 'A minimal blog theme for Hugo'
+description = 'A Hugo theme focused on simplicity and minimalism'
 
 homepage = 'https://github.com/imgios/not-much'
 
