@@ -85,16 +85,11 @@ Once installed, you can configure and customise the theme as you wish - read the
 
 ## Contributing
 
-<!-- Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us. -->
 Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion that would make this better, please discuss and propose it with the owner. You can also simply open an issue with the tag "enhancement".
 
-1. [Fork the project](https://github.com/imgios/not-much/fork)
-2. Create your Feature Branch (`git checkout -b feat/cool-feature`)
-3. Commit your Changes (`git commit -m 'add some cool-feature'`)
-4. Push to the Branch (`git push origin feat/cool-feature`)
-5. Open a Pull Request
+Please read [CONTRIBUTING.md](https://github.com/imgios/not-much/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
