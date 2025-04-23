@@ -25,7 +25,7 @@ This is a **bold** word.
 
 With emphasize lines:
 
-```go {linenos=inline hl_lines=[3,"6-8"] style=emacs}
+```go {linenos=inline hl_lines=[3,"6-8"] style=dracula}
 package main
 
 import "fmt"
