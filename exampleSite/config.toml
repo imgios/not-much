@@ -18,8 +18,8 @@ copyright = "Sample custom notice © {year}"
 
 
 [params]
-theme = "dark"
-palette = "catpuccin"
+theme = "auto"
+palette = "eink"
 showThemeNotice = true
 showPostsSummary = true
 
