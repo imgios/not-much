@@ -30,7 +30,7 @@
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
           themeClasses = ["text-light", "dark"];
       }
-      document.body.classList.add(themeClasses);
+      document.body.classList.add(...themeClasses);
     }
 
     detectThemePreferences();
