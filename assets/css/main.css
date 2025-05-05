@@ -304,3 +304,9 @@ hr {
     currentColor 75%);
   background-size: 4px 4px;
 }
+
+.terms-char {
+  &::before {
+    content: '― ';
+  }
+}
