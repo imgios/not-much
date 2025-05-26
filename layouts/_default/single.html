@@ -43,7 +43,7 @@
       {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
       {{ partial "post-pagination.html" . }}
       {{ if .Params.comments }}
-        {{ partial "comments.html" }}
+        {{ partial "comments.html" . }}
       {{ end }}
     </div>
   </div>
