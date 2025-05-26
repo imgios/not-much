@@ -159,7 +159,7 @@ lazyLoading = true
 
 Both `repositoryId` and `categoryId` can be fetched from Giscus website.
 
-Once configured, you can enable comments by adding the comment parameter in the page metadata:
+Once configured, you can enable comments by using the `comments` parameter in the header:
 
 <kbd>/content/posts/post-with-comments.md</kbd>
 ```markdown
