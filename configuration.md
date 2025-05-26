@@ -13,6 +13,7 @@ A reference can be found in [`exampleSite/config.toml`](https://github.com/imgio
 - [Math rendering with KaTeX](#math-rendering-with-katex)
 - [Posts Summary in the Posts list](#posts-summary-in-the-posts-list)
 - [Table of Contents](#table-of-contents)
+- [Giscus Comments](#giscus-comments)
 
 ## Homepage
 
@@ -134,5 +135,38 @@ toc: true
 ```
 
 The Table of Contents is not displayed by default.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Giscus Comments
+
+This theme integrate [Giscus](https://giscus.app/) as comment system, which relies on GitHub Dicussions.
+
+Giscus integration requires the following parameters in site configuration:
+
+<kbd>config.toml</kbd>
+```toml
+[params.giscus]
+repository = "username/repository"
+repositoryId = "repositoryId"
+categoryName = "categoryName"
+categoryId = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
+language = "en"
+lazyLoading = true
+```
+
+Both `repositoryId` and `categoryId` can be fetched from Giscus website.
+
+Once configured, you can enable comments by using the `comments` parameter in the header:
+
+<kbd>/content/posts/post-with-comments.md</kbd>
+```markdown
+---
+...
+comments: true
+---
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

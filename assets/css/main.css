@@ -310,3 +310,7 @@ hr {
     content: '― ';
   }
 }
+
+.giscus {
+  padding-top: 1.5rem;
+}
