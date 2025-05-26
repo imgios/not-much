@@ -23,6 +23,17 @@ palette = "eink"
 showThemeNotice = true
 showPostsSummary = true
 
+# Giscus Comment System
+[params.giscus]
+repository = "username/repository"
+repositoryId = "repositoryId"
+categoryName = "categoryName"
+categoryId = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
+language = "en"
+lazyLoading = true
+
 # Navigation
 [menu]
   [[menu.main]]
@@ -52,14 +63,3 @@ showPostsSummary = true
     title = "GitHub"
     url = "https://github.com/imgios/not-much"
     weight = 4
-
-# Giscus Comment System
-[params.giscus]
-repository = "username/repository"
-repositoryId = "repositoryId"
-categoryName = "categoryName"
-categoryId = "categoryId"
-mapping = "pathname"
-theme = "preferred_color_scheme"
-language = "en"
-lazyLoading = true
