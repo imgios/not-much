@@ -305,6 +305,12 @@ hr {
   background-size: 4px 4px;
 }
 
+.terms-char {
+  &::before {
+    content: '― ';
+  }
+}
+
 .giscus {
   padding-top: 1.5rem;
 }

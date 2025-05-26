@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="container pt-5">
+    <div class="row mt-5 pt-5">
+        {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    </div>
+
+    {{ $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" }}
+    <div class="d-flex flex-column align-items-start">
+    {{ range sort .Site.Taxonomies.tags }}
+        <!-- This assumes the title is never empty -->
+        {{ $firstChar := substr .Page.Title 0 1 | upper }}
+        {{ if $firstChar | in $letters }}
+            {{ $curLetter := $.Scratch.Get "curLetter" }}
+            {{ if ne $firstChar $curLetter }}
+            {{ $.Scratch.Set "curLetter" $firstChar }}
+                <span class="terms-char pt-2 pb-1">{{ $firstChar }}</span>
+            {{ end }}
+            <a class="badge text-uppercase" href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a>
+        {{ end }}
+    {{ end }}
+    </div>
+{{ end }}
