@@ -126,7 +126,7 @@ showPostsSummary = true
 
 You can display the Table of Contents in the post by configuring the `toc` parameter in the header:
 
-<kbd>/content/posts/example-post.yaml</kbd>
+<kbd>/content/posts/example-post.md</kbd>
 ```markdown
 ---
 ...
