@@ -5,6 +5,7 @@
     --primary-variant: #ff405a;
     --secondary: #04a5e5;
     --font-color: #212529;
+    --selection-color: black;
 }
 
 .dark {
@@ -14,4 +15,5 @@
     --primary-variant: #ff475f;
     --secondary: #f7f5dd;
     --font-color: #f3f3f3;
+    --selection-color: black;
 }

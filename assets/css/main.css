@@ -17,7 +17,7 @@ body, main {
 
 ::selection {
   background: var(--secondary);
-  color: black;
+  color: var(--selection-color);
 }
 
 .splash-screen {
