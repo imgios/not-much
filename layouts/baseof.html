@@ -36,5 +36,12 @@
     detectThemePreferences();
   </script>
   {{- end }}
+
+  {{ if .Site.Params.showFooterEverywhere}}
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+  {{ end }}
+
 </body>
 </html>

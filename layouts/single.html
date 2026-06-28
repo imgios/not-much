@@ -47,7 +47,9 @@
       {{ end }}
     </div>
   </div>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+  {{ if not .Site.Params.showFooterEverywhere }}
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+  {{ end }}
 {{ end }}
