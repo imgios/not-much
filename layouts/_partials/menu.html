@@ -10,8 +10,19 @@ Renders a menu for the given menu ID.
 {{- $page := .page }}
 {{- $menuID := .menuID }}
 
+{{ $theme := "dark" }}
+{{- with .Site.Params.theme }}
+  {{ $theme = . }}
+{{- end }}
+
 {{- with index site.Menus $menuID }}
-  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+  <nav aria-label="breadcrumb" class="
+    small
+    navbar
+    {{- if eq $theme "dark" }}
+    navbar-dark
+    {{- end }}
+    navbar-expand-lg">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

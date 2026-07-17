@@ -105,6 +105,17 @@ showThemeNotice = true # or false
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Footer
+
+By default, the footer is only rendered in blog posts. To make it appear:everywhere throughout your site, set this:
+
+<kbd>config.toml</kbd>
+
+```toml
+[params]
+showFooterEverywhere = true
+```
+
 ## Math rendering with KaTeX
 
 You can enable the math rendering by adding `math: true` in the page metadata.
