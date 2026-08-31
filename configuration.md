@@ -199,7 +199,7 @@ defaultContentLanguage = "en"
 
 [languages]
   [languages.en]
-    languageName = "English"
+    label = "English"
     locale = "en"
     weight = 1
     [languages.en.params.giscus]
@@ -213,13 +213,13 @@ If you want to support more than one language, you can configure more under `[la
 ```toml
 [languages]
   [languages.en]
-    languageName = "English"
+    label = "English"
     locale = "en"
     weight = 1
     [languages.en.params.giscus]
     language = "en"
   [languages.it]
-    languageName = "Italiano"
+    label = "Italiano"
     locale = "it"
     weight = 2
     [languages.it.params.giscus]
