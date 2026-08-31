@@ -33,3 +33,9 @@ other = "DRAFT"
 
 [toggleNavigation]
 other = "Toggle navigation"
+
+[pageNotFound]
+other = "For sure this is not what you are looking for."
+
+[GoBackToHome]
+other = "Return to the home page"

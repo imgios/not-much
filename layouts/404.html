@@ -3,10 +3,10 @@
     <h1 class="h5 mb-3 mt-5 pt-5">404</h1>
     <div class="row mb-3">
       <p>
-        For sure this is not what you are looking for.
+        {{ T "pageNotFound" }}
       </p>
       <a href="{{ .Site.Home.RelPermalink }}">
-        ← Return to the home page
+        ← {{ T "GoBackToHome" }}
       </a>
     </div>
   </div>
