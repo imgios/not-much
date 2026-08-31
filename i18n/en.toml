@@ -18,6 +18,9 @@ other = "previous"
 [next]
 other = "next"
 
+[back]
+other = "back"
+
 [updated]
 other = "Updated"
 
