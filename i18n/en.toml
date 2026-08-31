@@ -1,8 +1,7 @@
 [home]
 other = "Home"
 
-[post]
-one = "Post"
+[posts]
 other = "Posts"
 
 [about]
