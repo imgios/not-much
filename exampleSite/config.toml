@@ -45,21 +45,18 @@ lazyLoading = true
   
   [[menu.main]]
     identifier = "posts"
-    name = "posts"
     title = "posts"
     url = "/posts"
     weight = 3
   
   [[menu.main]]
     identifier = "about"
-    name = "about"
     title = "About"
     url = "/about"
     weight = 2
   
   [[menu.main]]
     identifier = "tags"
-    name = "tags"
     title = "tags"
     url = "/tags"
     weight = 4
