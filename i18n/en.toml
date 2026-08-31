@@ -21,9 +21,9 @@ other = "next"
 [updated]
 other = "Updated"
 
-[minute]
-one = "minute"
-other = "minutes"
+[readingTime]
+one = "{{ .Count }} minute"
+other = "{{ .Count }} minutes"
 
 [tableOfContents]
 other = "Table of Contents"
