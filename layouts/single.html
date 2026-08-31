@@ -12,7 +12,7 @@
           <ol class="breadcrumb">
             <li class="breadcrumb-item small">
               {{ if .Draft }}
-              <span class="draft-label">DRAFT</span> &#183;
+              <span class="draft-label">{{ T "draft" }}</span> &#183;
               {{ end }}
               <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
             </li>
@@ -20,11 +20,11 @@
             {{ if and (isset .Params "lastmod") (ne $lastModMachine $dateMachine) }}
             {{ $lastModHuman := .Lastmod | time.Format ":date_long" }}
             <li class="breadcrumb-item small">
-              Updated: <time datetime="{{ $lastModMachine }}">{{ $lastModHuman }}</time>
+              {{ T "updated" }}: <time datetime="{{ $lastModMachine }}">{{ $lastModHuman }}</time>
             </li>
             {{ end }}
             <li class="breadcrumb-item small">
-              {{ printf "%d minutes" .ReadingTime }}
+              {{ T "readingTime" (dict "Count" .ReadingTime) }}
             </li>
           </ol>
         </div>
@@ -32,7 +32,7 @@
       {{ if .Params.toc }}
       <div class="toc small">
         <p class="toc-title fw-semibold">
-          Table of Contents:
+          {{ T "tableOfContents" }}:
         </p>
         {{ .TableOfContents }}
       </div>
