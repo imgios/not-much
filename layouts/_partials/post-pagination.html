@@ -1,16 +1,16 @@
 <div class="row">
     <div class="col-md">
         {{if .PrevInSection}}
-        <a href="{{.PrevInSection.Permalink}}">
-            <span>previous: </span>
+        <a href="{{.PrevInSection.RelPermalink}}">
+            <span>{{ T "previous" }}: </span>
             <span>{{.PrevInSection.Title}}</span>
         </a>
         {{end}}
     </div>
     <div class="col-md text-md-end">
         {{if .NextInSection}}
-        <a href="{{.NextInSection.Permalink}}">
-            <span>next: </span>
+        <a href="{{.NextInSection.RelPermalink}}">
+            <span>{{ T "next" }}: </span>
             <span>{{.NextInSection.Title}}</span>
         </a>
         {{end}}
