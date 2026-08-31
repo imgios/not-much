@@ -3,7 +3,7 @@
       <div class="row mt-5 pt-5">
         {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
       </div>
-      <h1 class="h5 mb-3">content linked to <span class="text-lowercase underline">{{ .Title }}</span></h1>
+      <h1 class="h5 mb-3">{{ T "contentLinked" }} <span class="text-lowercase underline">{{ .Title }}</span></h1>
       {{ .Content }}
       {{ range .Pages }}
       <div class="row mb-3">

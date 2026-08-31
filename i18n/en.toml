@@ -1,0 +1,45 @@
+[home]
+other = "home"
+
+[posts]
+other = "posts"
+
+[about]
+other = "about"
+
+[tags]
+other = "tags"
+
+[previous]
+other = "previous"
+
+[next]
+other = "next"
+
+[back]
+other = "back"
+
+[updated]
+other = "Updated"
+
+[readingTime]
+one = "{{ .Count }} minute"
+other = "{{ .Count }} minutes"
+
+[tableOfContents]
+other = "Table of Contents"
+
+[draft]
+other = "DRAFT"
+
+[toggleNavigation]
+other = "Toggle navigation"
+
+[pageNotFound]
+other = "For sure this is not what you are looking for."
+
+[GoBackToHome]
+other = "Return to the home page"
+
+[contentLinked]
+other = "content linked to"

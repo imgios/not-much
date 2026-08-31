@@ -25,12 +25,12 @@
       <ol class="breadcrumb">
         {{ if $paginator.HasPrev }}
         <li class="breadcrumb-item">
-          <a href="{{ $paginator.Prev.URL }}">← back</a>
+          <a href="{{ $paginator.Prev.URL }}">← {{T "back" }}</a>
         </li>
         {{ end }}
         {{ if $paginator.HasNext }}
         <li class="breadcrumb-item">
-          <a href="{{ $paginator.Next.URL }}">next →</a>
+          <a href="{{ $paginator.Next.URL }}">{{ T "next" }} →</a>
         </li>
         {{ end }}
       </ol>

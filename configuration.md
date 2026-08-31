@@ -14,6 +14,7 @@ A reference can be found in [`exampleSite/config.toml`](https://github.com/imgio
 - [Posts Summary in the Posts list](#posts-summary-in-the-posts-list)
 - [Table of Contents](#table-of-contents)
 - [Giscus Comments](#giscus-comments)
+- [Site languages](#site-languages)
 
 ## Homepage
 
@@ -164,9 +165,16 @@ categoryName = "categoryName"
 categoryId = "categoryId"
 mapping = "pathname"
 theme = "preferred_color_scheme"
-language = "en"
 lazyLoading = true
+
+[languages]
+  [languages.en]
+    [languages.en.params.giscus]
+    language = "en"
 ```
+
+> [!IMPORTANT]
+> Pay attention to the Giscus language parameter. As you can see, it is configured in a different block related to the site language since it's the only language-dependent setting. E.g., `[languages.en.params.giscus]`
 
 Both `repositoryId` and `categoryId` can be fetched from Giscus website.
 
@@ -178,6 +186,44 @@ Once configured, you can enable comments by using the `comments` parameter in th
 ...
 comments: true
 ---
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Site Languages
+
+This theme supports the Hugo Multilingual mechanism based on i18n. To configure your site language, you have to add the following parameters:
+
+```toml
+defaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    locale = "en"
+    weight = 1
+    [languages.en.params.giscus]
+    language = "en"
+```
+
+The example is done using the English language, but you can customise it with any other language. Make sure the related language code translation file is stored in the `i18n/` folder.
+
+If you want to support more than one language, you can configure more under `[languages]`, e.g.:
+
+```toml
+[languages]
+  [languages.en]
+    languageName = "English"
+    locale = "en"
+    weight = 1
+    [languages.en.params.giscus]
+    language = "en"
+  [languages.it]
+    languageName = "Italiano"
+    locale = "it"
+    weight = 2
+    [languages.it.params.giscus]
+    language = "it"
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

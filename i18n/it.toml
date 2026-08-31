@@ -1,0 +1,45 @@
+[home]
+other = "home"
+
+[posts]
+other = "posts"
+
+[about]
+other = "about"
+
+[tags]
+other = "tags"
+
+[previous]
+other = "precedente"
+
+[next]
+other = "prossimo"
+
+[back]
+other = "indietro"
+
+[updated]
+other = "Aggiornato"
+
+[readingTime]
+one = "{{ .Count }} minuto"
+other = "{{ .Count }} minuti"
+
+[tableOfContents]
+other = "Tabella dei Contenuti"
+
+[draft]
+other = "BOZZA"
+
+[toggleNavigation]
+other = "Abilita navigazione"
+
+[pageNotFound]
+other = "Di sicuro non è questo ciò che stavi cercando."
+
+[GoBackToHome]
+other = "Ritorna all'homepage"
+
+[contentLinked]
+other = "contenuti correlati a"
