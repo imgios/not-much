@@ -5,9 +5,19 @@ themesDir = "../../"
 
 title = "not-much demo"
 theme = "not-much"
-languageCode = "en-us"
 baseURL = "https://example.org/"
 copyright = "Sample custom notice © {year}"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    locale = "en"
+    weight = 1
+    [languages.en.params.giscus]
+    language = "en"
 
 [markup]
   [markup.highlight]
@@ -15,7 +25,6 @@ copyright = "Sample custom notice © {year}"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-
 
 [params]
 theme = "auto"
@@ -31,7 +40,7 @@ categoryName = "categoryName"
 categoryId = "categoryId"
 mapping = "pathname"
 theme = "preferred_color_scheme"
-language = "en"
+# language = "en" is configured directly under languages.<languageCode>.params.giscus
 lazyLoading = true
 
 # Navigation
