@@ -1,14 +1,14 @@
 [home]
-other = "Home"
+other = "home"
 
 [posts]
-other = "Posts"
+other = "posts"
 
 [about]
-other = "About"
+other = "about"
 
 [tags]
-other = "Tags"
+other = "tags"
 
 [previous]
 other = "previous"
