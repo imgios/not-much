@@ -1,0 +1,35 @@
+[home]
+other = "Home"
+
+[post]
+one = "Post"
+other = "Posts"
+
+[about]
+other = "About"
+
+[tag]
+one = "Tag"
+other = "Tags"
+
+[previous]
+other = "previous"
+
+[next]
+other = "next"
+
+[updated]
+other = "Updated"
+
+[minute]
+one = "minute"
+other = "minutes"
+
+[tableOfContents]
+other = "Table of Contents"
+
+[draft]
+other = "DRAFT"
+
+[toggleNavigation]
+other = "Toggle navigation"
