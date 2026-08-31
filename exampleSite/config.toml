@@ -18,6 +18,12 @@ defaultContentLanguageInSubdir = false
     weight = 1
     [languages.en.params.giscus]
     language = "en"
+  [languages.it]
+    languageName = "Italiano"
+    locale = "it"
+    weight = 2
+    [languages.it.params.giscus]
+    language = "it"
 
 [markup]
   [markup.highlight]
