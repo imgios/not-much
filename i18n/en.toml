@@ -43,3 +43,6 @@ other = "Return to the home page"
 
 [contentLinked]
 other = "content linked to"
+
+[chooseLanguage]
+other = "Choose language"

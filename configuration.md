@@ -226,4 +226,6 @@ If you want to support more than one language, you can configure more under `[la
     language = "it"
 ```
 
+Once more than one language is configured, the theme automatically shows a minimal language selector next to the navigation menu. It links to the translated version of the current page when one exists, or to that language's homepage otherwise, and needs no extra configuration.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

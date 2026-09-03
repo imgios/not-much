@@ -34,6 +34,36 @@ Renders a menu for the given menu ID.
   </nav>
 {{- end }}
 
+{{- partial "inline/menu/language-selector.html" $page }}
+
+{{- define "partials/inline/menu/language-selector.html" }}
+  {{- if hugo.IsMultilingual }}
+    {{- $page := . }}
+    {{- $translations := dict }}
+    {{- range $page.AllTranslations }}
+      {{- $translations = merge $translations (dict .Language.Lang .) }}
+    {{- end }}
+    <ul aria-label="{{ T "chooseLanguage" }}" class="language-selector list-inline small mb-0 mt-2">
+      {{- range site.Sites }}
+        {{- $langCode := .Language.Lang }}
+        {{- $target := index $translations $langCode }}
+        {{- if not $target }}
+          {{- $target = .Home }}
+        {{- end }}
+        {{- with $target }}
+        <li class="list-inline-item">
+          <a href="{{ .RelPermalink }}"
+            {{- if eq $langCode $page.Language.Lang }}
+            class="text-decoration-underline link-offset-3" aria-current="page"
+            {{- end }}
+          >{{ or .Language.LanguageName $langCode }}</a>
+        </li>
+        {{- end }}
+      {{- end }}
+    </ul>
+  {{- end }}
+{{- end }}
+
 {{- define "partials/inline/menu/walk.html" }}
   {{- $page := .page }}
   {{- range .menuEntries }}
